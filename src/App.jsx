@@ -6,13 +6,13 @@ import HomePage from "./Components/HomePage";
 function App() {
   return (
     <div className="flex">
-      <aside className="flex h-screen w-72 bg-white justify-center">
-        <div className="flex flex-col justify-between ">
-          <div className=" ">
+      <aside className="flex h-screen min-w-72 bg-white justify-center py-5 ">
+        <div className="flex flex-col justify-between h-full ">
+          <div className="flex flex-row justify-center mb-10 ">
             <img
               src="../src/assets/output-onlinepngtools.png"
               alt="cooking logo"
-              className="w-30 h-20"
+              className="w-10 h-10"
             />
           </div>
           <div className="flex flex-col gap-5">
@@ -32,6 +32,7 @@ function App() {
           <div className="">Created by Rei Ramadani</div>
         </div>
       </aside>
+
       <HomePage />
     </div>
   );
