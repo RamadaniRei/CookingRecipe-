@@ -1,5 +1,5 @@
 import React from "react";
-import Card from "./RecipeCard";
+import RecipeCard from "./RecipeCard";
 import Meal from "../assets/Meal.jpg";
 
 const HomePage = () => {
@@ -14,7 +14,7 @@ const HomePage = () => {
         <h1>Recently Added</h1>
         <div className="overflow-x-auto max-w-full">
           <div className="inline-flex gap-5 w-max">
-            <Card
+            <RecipeCard
               background={"bg-green-200"}
               image={Meal}
               timeToCook={"20 Minutes"}
@@ -23,7 +23,7 @@ const HomePage = () => {
               ingredients={"Salmon,onion,olive"}
               category={"Healthy"}
             />
-            <Card
+            <RecipeCard
               background={"bg-green-200"}
               image={Meal}
               timeToCook={"20 Minutes"}
@@ -32,7 +32,7 @@ const HomePage = () => {
               ingredients={"Salmon,onion,olive"}
               category={"Healthy"}
             />
-            <Card
+            <RecipeCard
               background={"bg-green-200"}
               image={Meal}
               timeToCook={"20 Minutes"}
@@ -41,7 +41,7 @@ const HomePage = () => {
               ingredients={"Salmon,onion,olive"}
               category={"Healthy"}
             />
-            <Card
+            <RecipeCard
               background={"bg-green-200"}
               image={Meal}
               timeToCook={"20 Minutes"}
@@ -50,7 +50,7 @@ const HomePage = () => {
               ingredients={"Salmon,onion,olive"}
               category={"Healthy"}
             />
-            <Card
+            <RecipeCard
               background={"bg-green-200"}
               image={Meal}
               timeToCook={"20 Minutes"}
@@ -67,7 +67,7 @@ const HomePage = () => {
         <div>Cooked by people with similar preferences</div>
         <div className="overflow-x-auto max-w-full">
           <div className="inline-flex gap-5 w-max">
-            <Card
+            <RecipeCard
               background={"bg-green-200"}
               image={Meal}
               timeToCook={"20 Minutes"}
@@ -76,7 +76,7 @@ const HomePage = () => {
               ingredients={"Salmon,onion,olive"}
               category={"Healthy"}
             />
-            <Card
+            <RecipeCard
               background={"bg-green-200"}
               image={Meal}
               timeToCook={"20 Minutes"}
@@ -85,7 +85,7 @@ const HomePage = () => {
               ingredients={"Salmon,onion,olive"}
               category={"Healthy"}
             />
-            <Card
+            <RecipeCard
               background={"bg-green-200"}
               image={Meal}
               timeToCook={"20 Minutes"}
@@ -94,7 +94,7 @@ const HomePage = () => {
               ingredients={"Salmon,onion,olive"}
               category={"Healthy"}
             />
-            <Card
+            <RecipeCard
               background={"bg-green-200"}
               image={Meal}
               timeToCook={"20 Minutes"}

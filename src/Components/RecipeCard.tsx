@@ -15,7 +15,7 @@ interface RecipeCard {
   category: string;
 }
 
-const Card = ({
+const RecipeCard = ({
   image,
   timeToCook,
   title,
@@ -78,4 +78,4 @@ const Card = ({
     </div>
   );
 };
-export default Card;
+export default RecipeCard;
