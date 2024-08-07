@@ -34,8 +34,8 @@ const RecipeCard = ({
       className={`flex flex-col bg-green-200 p-5 w-64 rounded-lg shadow-md gap-2`}
     >
       <div className="flex flex-col w-full relative">
-        <div className="relative w-full h-20">
-          <img src={image} className=" h-20 w-full" alt="Salmon" />
+        <div className="relative w-full h-24">
+          <img src={image} className=" h-24 w-full" alt="Salmon" />
           <button
             onClick={handleFavoriteClick}
             className=" flex rounded-full bg-white w-4 h-4 absolute items-center top-2 right-2"
