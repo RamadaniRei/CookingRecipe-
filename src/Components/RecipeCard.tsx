@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import Meal from "../assets/Meal.jpg";
+
 import { MdOutlineMonitorWeight, MdStar } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
 import { IoTimeOutline } from "react-icons/io5";
 import { FaHeart, FaHeartbeat } from "react-icons/fa";
+import Modal from "./Modal/Modal";
 
 interface RecipeCard {
   background: string;
@@ -24,6 +25,8 @@ const RecipeCard = ({
   category,
 }: RecipeCard) => {
   const [isFavorite, setIsFavorite] = useState(false);
+
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleFavoriteClick = () => {
     setIsFavorite(!isFavorite);
@@ -70,10 +73,18 @@ const RecipeCard = ({
         </div>
       </div>
       <div className="text-xs font-light">{ingredients}</div>
-      <div className="flex flex-row gap-2">
+      <div className="flex flex-row gap-2 justify-between ">
         <div className="flex flex-row bg-green-400 text-xs rounded-md items-center p-1">
           {category}
         </div>
+        <button
+          onClick={() => setIsOpen(true)}
+          className="flex flex-row bg-green-600 text-xs rounded-md items-center p-1"
+        >
+          {" "}
+          More Info.
+        </button>
+        {isOpen && <Modal setIsOpen={setIsOpen} />}
       </div>
     </div>
   );
